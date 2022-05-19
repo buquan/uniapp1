@@ -1,0 +1,54 @@
+{
+  "name": "uniapp1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,vue,css,scss}": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.{js,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add -A"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buquan/uniapp1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buquan/uniapp1/issues"
+  },
+  "homepage": "https://github.com/buquan/uniapp1#readme",
+  "dependencies": {
+    "eslint-config-standard": "^17.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.2.0"
+  }
+}
