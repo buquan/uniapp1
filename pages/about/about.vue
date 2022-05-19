@@ -20,7 +20,7 @@ import Z from './com/z.vue'
 export default {
   data() {
 		const a = 999;
-		const b= 9888i;
+		const b= 9888;
     const now = +new Date();
     return {
       val: '888',
